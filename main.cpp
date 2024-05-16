@@ -19,7 +19,9 @@ void enterNumbers(int *number1, int *number2) {
 
 int main() {
     int option = 0;
-
+    int number1 = 0;
+    int number2 = 0;
+    int result = 0;
 
     printf("Simple Calc\n");
 
@@ -30,7 +32,9 @@ int main() {
             case 0:
                 break;
             case 1:
-
+                enterNumbers(&number1, &number2);
+                result = number1 + number2;
+                printf("%d + %d = %d\n", number1, number2, result);
             case 2:
 
             case 3:
